@@ -1,0 +1,62 @@
+body {
+    font-family: 'Marck Script', cursive;
+  }
+.wrapper {
+  width:100%;
+  background-color: rgb(253, 206, 188, .1);
+  display: block;
+
+}
+  
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Marck Script', cursive;
+  
+    
+  }
+
+  .austinphoto {
+      background-image: url("dreamstime_l_72138437.jpg");
+      height: 400px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-y: center;
+  }
+
+  .BrunchMenu {
+    font-size: 18px;
+    height: 300px;
+    font-family: 'Marck Script', cursive;
+  }
+
+.griditem {
+  text-align: justify;
+  border-right: 10px;
+  display: inline-block;
+  padding-left: 300px;
+  width: 33%;
+}
+
+.type {
+  float:left;
+  padding-left: 70px;
+}
+.vibes {
+  float:right;
+  padding-right: 200px;
+}
+
+
+
+  .brunchpic {
+    background-image: url("avotoast.jpeg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+  }
+
+
+  
