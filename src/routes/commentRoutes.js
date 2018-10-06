@@ -8,3 +8,4 @@ router.get("/comment/:id", show);
 router.post("/comments", create);
 
 
+module.exports = router;

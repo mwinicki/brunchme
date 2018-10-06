@@ -1,7 +1,6 @@
 const restaurantModel = require("../models/restaurantModel");
 
 module.exports.list = function list(request, response) {
-
   restaurantModel.find({}).exec()
  .then(restaurant => {
    response.json(restaurant);
@@ -10,6 +9,14 @@ module.exports.list = function list(request, response) {
 
 module.exports.show = function show(request, response) {
   restaurantModel.findById(request.params.id).exec()
+  .then(restaurant => {
+    response.json(restaurant);
+  });
+};
+
+
+module.exports.showQueried = function showQueried(request, response) {
+  restaurantModel.find(request.query).exec()
   .then(restaurant => {
     response.json(restaurant);
   });

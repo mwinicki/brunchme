@@ -8,6 +8,10 @@ const schema = new mongoose.Schema({
  addressLocality: {
    required: true,
    type: String
+ },
+ postalCode: {
+   required: true,
+   type: String
  }
 });
 
