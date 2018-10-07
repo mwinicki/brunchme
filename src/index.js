@@ -18,7 +18,7 @@ app.use(commentRoutes);
 
 
 
-app.listen(5000, (err) => {
+app.listen(process.env.PORT || 5000, (err) => {
   if (err) {
      return console.log("Error", err);
 };
