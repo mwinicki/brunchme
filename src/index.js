@@ -2,7 +2,7 @@ let express = require("express");
 let bodyParser = require("body-parser");
 let mongoose = require ("mongoose");
 let restaurants = require ('./models/restaurantModel');
-let restaurantRoutes = require ("./routes/restaurantRoutes");
+let restaurantRoutes = require ("./routes/RestaurantRoutes");
 let commentRoutes = require ("./routes/commentRoutes");
 const app = express();
 
