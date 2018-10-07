@@ -4,7 +4,7 @@ body {
 .wrapper {
   width:100%;
   background-color: rgb(253, 206, 188, .1);
-  display: block;
+  display: grid;
 
 }
   
@@ -31,21 +31,21 @@ body {
     font-family: 'Marck Script', cursive;
   }
 
-.griditem {
+.features {
   text-align: justify;
-  border-right: 10px;
+  border-right: 5px;
   display: inline-block;
-  padding-left: 300px;
+  padding-left: 250px;
   width: 33%;
 }
 
-.type {
+.zip {
   float:left;
   padding-left: 70px;
 }
-.vibes {
+.price {
   float:right;
-  padding-right: 200px;
+  padding-right: 100px;
 }
 
 
