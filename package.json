@@ -10,6 +10,10 @@
     "server": "nodemon src/server/index.js",
     "dev": "concurrently 'npm run server' 'npm run client'"
   },
+  "engines": {
+    "npm": "6.4.1"
+  },
+  
   "author": "Marilu Winicki",
   "license": "ISC",
   "dependencies": {
