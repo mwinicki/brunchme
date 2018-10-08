@@ -13,6 +13,7 @@
   "author": "Marilu Winicki",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "mongoose": "^5.3.2",
     "react": "^16.5.2",
