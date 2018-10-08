@@ -1,0 +1,86 @@
+body {
+  font-family: 'Marck Script', cursive;
+  font-size: 20px;
+}
+.wrapper {
+width:100%;
+font-weight: bold;
+font-size: 24px;
+background-color: rgb(253, 206, 188, .1);
+display: grid;
+
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+
+  
+}
+
+.austinphoto {
+    background-image: url("dreamstime_l_72138437.jpg");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+}
+
+.formWrapper {
+  display: flex;
+}
+
+.features {
+  font-size: 20px;
+  text-align: justify;
+  width: 25%;
+  padding-left: 450px;
+}
+
+.zip {
+  font-size: 20px;
+  float:left;
+  padding-left: 100px;
+  width: 30%;
+ 
+}
+.price {
+  font-size: 20px;
+  float:right;
+  padding-left: 400px;
+  width: 25%;
+  
+}
+
+
+.brunchpic {
+  background-image: url("avotoast.jpeg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: center;
+}
+
+.submit-button {
+  display: block;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  outline: 3px;
+  cursor: pointer;
+  background-color:  rgb(253, 206, 188, .1);
+  padding: 10px 30px;
+  border-radius: 5px;
+  border-color: black;
+  margin: auto;
+}
+
+.submit-button:hover {
+  background-color:  rgba(250, 166, 133, 0.694);
+}
+
+.submit-button:active {
+  transform: translateY(1px);
+}
