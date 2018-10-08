@@ -10,7 +10,7 @@ const path = require('path');
     
 mongoose.connect("mongodb://user1:iamuser1@ds137812.mlab.com:37812/brunchme");
 
-app.use(express.static('dist'));
+app.use(express.static(__dirname + '/dist'));
 app.use(bodyParser.json());
 app.use(restaurantRoutes);
 app.use(commentRoutes);
