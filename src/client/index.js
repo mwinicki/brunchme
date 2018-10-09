@@ -145,10 +145,10 @@ render() {
     
     <br/>
     <br/>
-
+    <button type="submit" className="submit-button">Submit</button>
     </form>
 
-    <button type="submit" className="submit-button">Submit</button>
+    
     <br/>
     <br/>
 
