@@ -37,6 +37,7 @@ handlePriceChange(event) {
 }
  handleSubmit(event) {
     event.preventDefault();
+    fetch("/api/restaurants")
 
     alert(`Thanks for letting us know, we'll grab some options for you.`);
     return false
@@ -45,8 +46,9 @@ handlePriceChange(event) {
     
 render() {
     return (
-    <div>
-    <form className= "formWrapper" onSubmit={this.handleSubmit}>
+      <div>
+    <form onSubmit={this.handleSubmit}>
+    <div className= "formWrapper">
     <br/>
    <div className="zip">
     Location:
@@ -143,11 +145,10 @@ render() {
          <br/>
          <br/>
     
-    <br/>
-    <br/>
-    <button type="submit" className="submit-button">Submit</button>
-    </form>
 
+    </div>
+    <input type="submit" className="submit-button" value="Submit"></input>
+    </form>
     
     <br/>
     <br/>
@@ -158,6 +159,7 @@ render() {
 }
 
  }
+
 
 
 
