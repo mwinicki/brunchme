@@ -27,7 +27,8 @@
     "react-dom": "^16.5.2",
     "react-router": "^4.3.1",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.0.0",
@@ -46,8 +47,7 @@
     "file-loader": "^1.1.11",
     "nodemon": "^1.17.3",
     "style-loader": "^0.23.0",
-    "url-loader": "^1.0.1",
-    "webpack-dev-server": "^3.1.9"
+    "url-loader": "^1.0.1"
   },
   "repository": {
     "type": "git",
