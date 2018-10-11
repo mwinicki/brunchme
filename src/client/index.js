@@ -11,6 +11,7 @@ export default class RadioSearch extends React.Component {
         zip: '',
         feature: '',
         price: '',
+        restaurants: [],
       };
    
 this.handleZipChange = this.handleZipChange.bind(this);
@@ -37,7 +38,14 @@ handlePriceChange(event) {
 }
  handleSubmit(event) {
     event.preventDefault();
+    let that = this;
     fetch("/api/restaurants")
+    .then(function (data) { return data.json();})
+    .then(function(data) {
+     that.setState({
+       restaurants: data,
+     })
+  })
 
     alert(`Thanks for letting us know, we'll grab some options for you.`);
     return false
@@ -45,6 +53,10 @@ handlePriceChange(event) {
 
     
 render() {
+  const restaurantList = this.state.restaurants.map((restaurant) => 
+  <div key={restaurant._id}>{restaurant.name}</div>
+  
+  ); 
     return (
       <div>
     <form onSubmit={this.handleSubmit}>
@@ -152,14 +164,18 @@ render() {
     
     <br/>
     <br/>
+    <div class="brunchpic">
 
+
+    </div>
+   {restaurantList}
     <div>{this.props.children}</div>
     </div>
     );
+    
 }
 
  }
-
 
 
 
