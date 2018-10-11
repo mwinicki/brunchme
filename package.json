@@ -15,6 +15,7 @@
   "author": "Marilu Winicki",
   "license": "ISC",
   "dependencies": {
+    "babel-loader": "^8.0.4",
     "body-parser": "^1.18.3",
     "clean-webpack-plugin": "^0.1.19",
     "express": "^4.16.3",
@@ -33,7 +34,6 @@
     "@babel/preset-react": "^7.0.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.0",
-    "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "concurrently": "^4.0.0",
