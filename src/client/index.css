@@ -84,3 +84,11 @@ h1 {
 .submit-button:active {
   transform: translateY(1px);
 }
+
+.address {
+  font-size: 14px;
+}
+
+.phone {
+  font-size: 14px;
+}

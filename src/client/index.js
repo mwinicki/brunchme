@@ -39,7 +39,9 @@ handlePriceChange(event) {
  handleSubmit(event) {
     event.preventDefault();
     let that = this;
-    fetch("/api/restaurants")
+    fetch("/api/restaurantsQuery?postalCode=" + this.state.zip + '&' + 'features=' + this.state.feature + '&' + 'priceRange=' + this.state.price)
+
+
     .then(function (data) { return data.json();})
     .then(function(data) {
      that.setState({
@@ -54,8 +56,10 @@ handlePriceChange(event) {
     
 render() {
   const restaurantList = this.state.restaurants.map((restaurant) => 
-  <div key={restaurant._id}>{restaurant.name}</div>
-  
+  <div className = "restaurantDiv" key={restaurant._id}>{restaurant.name}<br/>
+  <div className= "address">{restaurant.fullAddress}</div>
+  <div className="phone">{restaurant.telephone}</div>
+  </div>
   ); 
     return (
       <div>
@@ -133,23 +137,23 @@ render() {
         <br/>
          <input 
          type="radio" 
-         value="$" 
-         checked={this.state.price === "$"}
+         value="Under $10" 
+         checked={this.state.price === "Under $10"}
          onChange={this.handlePriceChange}
          />
          $
 
          <input 
          type="radio" 
-         value="$$" 
-         checked={this.state.price === "$$"}
+         value="$11-30" 
+         checked={this.state.price === "$11-30"}
          onChange={this.handlePriceChange}
          />
          $$
         <input 
         type="radio" 
-         value="$$$" 
-         checked={this.state.price === "$$$"}
+         value="$31-60" 
+         checked={this.state.price === "$31-60"}
          onChange={this.handlePriceChange}
          />
          $$$
